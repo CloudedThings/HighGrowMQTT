@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sensor data from DynamoDB</title>
+</head>
+<body>
+<h1>Data from AWS DynamoDB</h1>
+    <a href="/">Main Page</a><br/>
+    <table>
+        <tr>
+            <th>Device Name</th>
+            <th>Time stamp</th>
+            <th>Humidity</th>
+            <th>Soil</th>
+            <th>Temperature</th>
+        </tr>
+        {% for d in data %}
+            <tr>
+                <td>{{ d ['devicename'] }}</td>
+                <td>{{ d ['timestamp'] }}</td>
+                <td>{{ d ['humid'] }}</td>
+                <td>{{ d ['soil'] }}</td>
+                <td>{{ d ['temp'] }}</td>
+            </tr>
+        {%endfor %}
+    </table>
+</body>
+</html>
