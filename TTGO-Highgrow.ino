@@ -38,8 +38,8 @@ String readString; // do not change this variable
 //#define DHT_TYPE DHT12
 //#define DHT_TYPE DHT22
 
-const char* ssid = "COMHEM_622cef";
-const char* password = "udmzumy3";
+const char* ssid = "";
+const char* password = "";
 const char* ntpServer = "0.se.pool.ntp.org";
 
 // Off-sets for time, and summertime. each hour is 3.600 seconds.
